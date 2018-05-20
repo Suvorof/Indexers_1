@@ -25,7 +25,7 @@ namespace Indexers_1
             get
             {
                 if(index >= 0 && index < article.Length)
-                return string.Format("Наименование товара: {0}. \nСтоимость: {1} рублей. \nЕсть в наличии в магазине: {2}",
+                return string.Format("Наименование товара: {0}. \nСтоимость: {1} гривен. \nЕсть в наличии в магазине: {2}",
                     article[index].Good_name, article[index].Good_price, article[index].Shop_name);
 
                 return "Такого товара нет на складе";
@@ -40,7 +40,7 @@ namespace Indexers_1
             {
                 for (int i = 0; i < article.Length; i++)
                     if (article[i].Good_name == index)
-                        return string.Format("Такой товар есть на складе: {0}. \nСтоимость: {1} рублей. \nЕсть в наличии в магазине: {2}",
+                        return string.Format("Такой товар есть на складе: {0}. \nСтоимость: {1} гривен. \nЕсть в наличии в магазине: {2}",
                             article[i].Good_name, article[i].Good_price, article[i].Shop_name);
 
                 return "Такого товара нет на складе:";
